@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlapItForRetail</title>
+    <link rel="stylesheet" href="slapitforretail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+<!---------Navigation Menu-------->    
+<header class="navmenu-box">
+    <nav class="navmenu-container">
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li class="navmenu-links">
+                <a href="#home">Home</a>
+            </li>
+            <li class="navmenu-links">
+                <a href="#about">About</a>
+            </li>
+            <li class="navmenu-links">
+                <a href="https://instagram.com/slapitforretail?igshid=MzRlODBiNWFlZA==" target="_blank">Store</a>
+            </li>
+            <li class="navmenu-links">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!--------------Home-------------->
+<section class="home-background-image" id="home">
+    <div class="center-img">
+        <article>
+            <img src="./FINAL.png" class="home-bg-img">
+        </article>
+    </div>
+</section>
+
+<!--------------About------------->
+<section class="about" id="about">
+    <div class="about-bg-box">
+        <p class="about-me">Located in the heart of South West London, SlapItForRetail is the creation of a man who had one vision. Securing creps for people for the best price in the market. Established in June 2022, the “sourcerers” as you see it today is a vision we’ve been working towards since 2018. We source our trainers from trusted marketplaces around the world. Our small team of sneaker-obsessed experts have the experience to guarantee 100% authenticity.</p>
+    </div>
+</section>
+
+<!--------------Store------------->
+<section class="store-container" id="store">
+
+</section>
+
+<!-------------Contact------------>
+<section class="contact-wrapper">
+    <section class="contact-form" id="contact">
+            <div class="contact-text">
+                <h2>DM us on Instagram!</h2>
+            </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/slapitforretail/" target="_blank" class="icon-text"><i class="fa-brands fa-instagram fa-3x" target="_blank"></i></a>
+            </div>
+    </section>
+</section>
+<!-------------Footer------------>
+<footer>
+    <p>© Slap It For Retail 2024. All Rights Reserved.</p>
+</footer>
+
+<!------Contact Form and Hamburger JavaScript------->
+<script src="slapitforretail.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    function sendEmail(){
+    Email.send({ 
+        Host : "smtp.elasticemail.com",
+        Username : "akshayparmar29@gmail.com",
+        Password : "7D3A73DAB2474F1654C2FB87B031052DC1E3",
+        To : 'akshayparmar29@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Message from SlapItForRetail Website",
+        Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value 
+            + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Sent Successfully")
+    );
+}
+</script>
+
+</body>
+</html>
