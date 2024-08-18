@@ -201,6 +201,10 @@ section.contact-form div.contact-text {
     padding: 40px;
 }
 
+section.contact-form div.contact-text h2 {
+    text-align: center;
+}
+
 section.contact-form div.icons a.icon-text {
     display: flex;
     justify-content: center;
@@ -232,9 +236,25 @@ footer p {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+section.terms-and-conditions {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+section.terms-and-conditions div.links {
+    padding: 100px;
+    text-align: center;
+}
+
+section.terms-and-conditions div.links li {
+    padding: 20px;
+    list-style-type: none;
+}
+
 /* Tablet */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     header.navmenu-box nav.navmenu-container ul.nav-ul {
         display: none;
         width: 100%;
@@ -286,24 +306,6 @@ footer p {
     section.home-background-image div.right-side button.home-button:hover {
         padding: 20px 40px;
         font-size: 1.5rem;
-    }
-
-    section.soon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section h2.coming-soon {
-        display: block;
-        justify-content: center;
-        margin: auto;
-        font-size: 4rem;
-        text-align: center;
-        font-weight: 700;
-        letter-spacing: 0.5rem;
-        padding: 270px;
-        padding-top: 100px;
     }
 }
 
