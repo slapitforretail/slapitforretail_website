@@ -252,6 +252,34 @@ section.terms-and-conditions div.links li {
     list-style-type: none;
 }
 
+section.terms-and-conditions div.links h2.delivery-title {
+    color: white;
+    font-size: 2.0rem;
+    padding-bottom: 40px;
+}
+
+section.terms-and-conditions div.links h3.delivery-sub-title {
+    color: white;
+    font-size: 1.2rem;
+}
+
+section.terms-and-conditions div.links p {
+    color: white;
+    line-height: 1.5rem;
+}
+
+section.terms-and-conditions div.links p.divider {
+    color: rgb(255, 62, 62);
+    padding: 10px 0px 20px 0px;
+}
+
+section.terms-and-conditions div.links li {
+    color: white;
+    list-style-type: disc;
+    font-size: 1.0rem;
+    letter-spacing: 0.1rem;
+}
+
 /* Tablet */
 
 @media screen and (max-width: 1300px) {
