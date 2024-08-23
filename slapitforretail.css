@@ -237,7 +237,7 @@ footer p {
 }
 
 section.terms-and-conditions {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
