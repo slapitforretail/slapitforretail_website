@@ -275,7 +275,7 @@ section.terms-and-conditions div.links p.divider {
 
 section.terms-and-conditions div.links li {
     color: white;
-    list-style-type: disc;
+    list-style-type: none;
     font-size: 1.0rem;
     letter-spacing: 0.1rem;
 }
